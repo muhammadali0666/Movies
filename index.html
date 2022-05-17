@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
+  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+<body class="body">
+  <div class="container">
+    <div class="ms-auto">
+      <h2 class="mt-5 paragraph">Movies Catalog</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-4">
+        <form action="">
+          <input class="form-control form-control-lg mt-5" type="text" placeholder="ave"
+            aria-label=".form-control-lg example">
+          <input class="form-control mt-3" type="text" placeholder="5" aria-label="default input example">
+          <select class="form-select mt-3" aria-label="Default select example">
+            <option selected>All</option>
+            <option value="1">Fantastic</option>
+            <option value="2">Action</option>
+            <option value="3">Funny</option>
+          </select>
+          <select class="form-select mt-3" aria-label="Default select example">
+            <option selected>Rating(High to Low)</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <div class="d-grid gap-2 mt-3">
+            <button class="btn btn-primary" type="button">Button</button>
+          </div>
+        </form>
+        <h3 class="mt-4 ">Bookmarked movies</h3>
+
+        <div class="row flex-column">
+          <div class="col-12">
+            <div class=" border bg-light p-3 bg-transparent d-flex flex-column">Avengers: Infinity War
+              <button type="button" class="btn btn-danger w-50 mt-1">Remove</button>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class=" border bg-light p-3 bg-transparent d-flex flex-column">The Avengers
+              <button type="button" class="btn btn-danger w-50 mt-1">Remove</button>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class=" border bg-light p-3 bg-transparent d-flex flex-column">12 Years a Slave
+              <button type="button" class="btn btn-danger w-50 mt-1">Remove</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-8 mt-5 ">
+        <h3>
+          Search result: 39
+        </h3>
+        <form>
+          <input class="form-control p-3 mt-2 bg-primery-25" type="text"
+            value="Use the form on the left to search for a movies" aria-label="readonly input example" readonly>
+        </form>
+        <div class="card-group mt-3">
+          <div class="card mb-2 me-5">
+            <iframe width="340" height="195" src="https://www.youtube.com/embed/QwievZ1Tx-8"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <div class="card-body">
+              <h4 class="card-title">Avengers: Infinity War</h4>
+            </div>
+            <div class="card-footer d-flex border-0 bg-transparent">
+              <img class="me-2 mt-0" src="./img/credit-card-solid.svg" alt="credit-card-solid" width="20" height="20">
+              <small class="text-muted">2018</small>
+            </div>
+            <div class="card-footer d-flex border-0 bg-transparent mt-0">
+              <img class="me-2" src="./img/star-solid.svg" alt="credit-card-solid" width="20" height="20">
+              <small class="text-muted">8.7</small>
+            </div>
+            <div class="ms-3 mt-3 mb-3">
+              <button type="button" class="btn btn-outline-primary">Watch</button>
+              <button type="button" class="btn btn-outline-primary ms-3">More Info</button>
+              <button type="button" class="btn btn-outline-success ms-3">Bookmark</button>
+            </div>
+          </div>
+          <div class="card mb-2">
+            <iframe width="340" height="195" src="https://www.youtube.com/embed/eOrNdBpGMv8?start=0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <div class="card-body">
+              <h4 class="card-title">The Avengers</h4>
+            </div>
+            <div class="card-footer d-flex border-0 bg-transparent mt-0">
+              <img class="me-2" src="./img/credit-card-solid.svg" alt="credit-card-solid" width="20" height="20">
+              <small class="text-muted">2012</small>
+            </div>
+            <div class="card-footer d-flex border-0 bg-transparent mt-0 ">
+              <img class="me-2" src="./img/star-solid.svg" alt="credit-card-solid" width="20" height="20">
+              <small class="text-muted">8.1</small>
+            </div>
+            <div class="ms-3 mt-3 mb-3">
+              <button type="button" class="btn btn-outline-primary">Watch</button>
+              <button type="button" class="btn btn-outline-primary ms-3">More Info</button>
+              <button type="button" class="btn btn-outline-success ms-3">Bookmark</button>
+            </div>
+          </div>
+        </div>
+        <nav class="mt-5 end-box" aria-label="...">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item active" aria-current="page">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">4</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
